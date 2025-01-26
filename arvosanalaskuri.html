@@ -6,15 +6,15 @@
 </head>
 <body>
     <h2>Arvosanalaskuri</h2>
-    <p>Lisää arvosanasi numero <br>
-    alla olevaan laatikkoon <br>
-    ja saat arvosanasi.
+    <p>Lisää arvosanasi 0-100 alla olevaan laatikkoon, <br>
+    paina Laske nappia niin saat arvosanasi.
     </p>
     <form>
         <label for="grade">Arvosana</label><br>
         <input type="number" id="grade" name="grade" value="Arvosana"><br>
-        <input type="button" value="Laske">
+        <input type="button" value="Laske" onclick="laskeArvosana">
     </form>
+
     <script src="arvosanalaskuri.js"></script>
 </body>
 </html>
