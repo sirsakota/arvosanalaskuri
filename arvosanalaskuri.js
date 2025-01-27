@@ -17,3 +17,4 @@ function laskeArvosana(grade) {
             else if(grade <= 60) 
                 return(grade = 'hylätty')
 }
+
