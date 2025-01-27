@@ -1,20 +1,21 @@
 
-let grade = 0
 
-function laskeArvosana(grade) {
+function laskeArvosana() {
+  let grade = document.getElementById('grade').value;
     if (grade < 0 || grade > 100)
-         return('Virheellinen numero, syötä numero 0-100');
+         console.log(grade = 'Virheellinen numero, syötä numero 0-100');
     if (grade === 100) 
-        return("erinomainen")
+        console.log("erinomainen")
     else if(grade >= 90) 
-        return(grade = 'erinomainen')
+        console.log(grade = 'erinomainen')
       else if(grade >= 80) 
-        return(grade = 'hyvä');
+        console.log(grade = 'hyvä');
         else if(grade >= 70) 
-            return(grade = 'tyydyttävä')
+            console.log(grade = 'tyydyttävä')
           else if(grade >= 60) 
-            return(grade = 'välttävä')
+            console.log(grade = 'välttävä')
             else if(grade <= 60) 
-                return(grade = 'hylätty')
+                console.log(grade = 'hylätty')
+              document.getElementById('tulos').innerHTML = `Tulos ${grade}`;
 }
 
